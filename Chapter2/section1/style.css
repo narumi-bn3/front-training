@@ -15,7 +15,7 @@ p {
 input {
   border-bottom: 1px solid #d1d1d1;
   font-size: 1.2em;
-  width: 100%;
+  width: 100%; 
   padding: 8px;
 }
 button {
@@ -25,4 +25,11 @@ button {
   padding: 15px;
   border-radius: 3px;
   box-shadow: 0 0 8px rgba(0,0,0,.4);
+}
+.control {
+  margin-bottom: 3em;
+}
+label {
+  display: block;
+  margin-bottom: .5em;
 }
