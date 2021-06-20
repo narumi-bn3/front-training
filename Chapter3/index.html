@@ -27,7 +27,9 @@
     <div class="container">
       <script>
         var today = new Date();
-        document.write(`<p>今日は` + today.getDate() + `日です</p>`);
+　　　　　var todayHtml = today.getFullYear() + `/` + (today.getMonth()+1) + `/` + today.getDate();
+        
+        document.write(`<p class="date">` + todayHtml + `</p>`);
       </script>
     </div>
   </body>
