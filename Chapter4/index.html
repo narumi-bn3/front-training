@@ -23,7 +23,9 @@
     </div>
   </div>
   <script>
-    document.getElementById(`timer`).innerHTML = `00:01:00`;
+    var now = new Date(); // Dateオブジェクトのインスタンスを作る
+    var seconds = now.getSeconds(); // 秒を取得する
+    document.getElementById(`timer`).innerHTML = seconds;
   </script>
   </body>
 </html>
