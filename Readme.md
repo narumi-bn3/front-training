@@ -153,3 +153,7 @@ javascriptは足し算や引き算などの「四則演算」をすることが�
 
 # Date.getDate
 日付を取得します。
+
+# 要素内にテキストを挿入するーDOM操作ー
+完成プログラムのように、時刻表示の内容を置き換えるにはDOM（ドム）を使います。DOM(Document Object Model)とは、HTMLの要素をプログラムの対象（＝オブジェクト）として扱うための手段で、API(Application Programing Interfaace)と呼ばれるものの一種です。
+document.writeメソッドを利用する場合以外は、```<script>```要素は必ず```<body>```要素の最後か、```<head>```要素内に記述します。
