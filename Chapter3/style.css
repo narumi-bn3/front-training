@@ -1,0 +1,18 @@
+body {
+  font-family: Arial; /* フォントをArialに */
+  text-align: center; /* 文字を中央揃えに */
+}
+header {
+  margin-bottom: 100px; /* ヘッダーの下部に余白を作る */
+}
+h1 {
+  background-color: #000; /*背景を黒に */
+  color: #fff; /* 文字を白に */
+  margin: 0; /* 余白をなくす　*/
+  padding: 10px; /* 要素内余白を10pxに */
+  font-size: 18px; /* 文字サイズを18pxに */
+}
+.date {
+  font-size: 300%; /* 文字サイズを３倍に */
+  font-family:  'Times New Roman', Times, serif; /* フォントをTimes New Roman に */
+}
