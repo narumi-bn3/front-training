@@ -30,7 +30,20 @@
       seconds = `0` + seconds;
     }
 
-    document.getElementById(`timer`).innerHTML = seconds;
+    // ここから追加・変更
+    var minutes = now.getMinutes(); // 分を取得する
+
+    if (minutes < 10) {
+      minutes = `0` + minutes;
+    }
+
+    var hours = now.getHours(); // 時を取得する
+
+    if (hours <10) {
+      hours = `0` + hours;
+    }
+
+    document.getElementById(`timer`).innerHTML = hours + `:` + minutes + `:` + seconds;
   </script>
   </body>
 </html>
