@@ -25,6 +25,11 @@
   <script>
     var now = new Date(); // Dateオブジェクトのインスタンスを作る
     var seconds = now.getSeconds(); // 秒を取得する
+    
+    if (seconds < 10) {
+      seconds = `0` + seconds;
+    }
+
     document.getElementById(`timer`).innerHTML = seconds;
   </script>
   </body>
