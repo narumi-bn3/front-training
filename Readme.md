@@ -176,3 +176,8 @@ if (条件分）{
 
   # イベントの定義
   要素.addEventListener(イベントの種類,処理);
+
+  # 自動で何度もプログラムを実行するーsetInterval
+  見ている間ずっと変わり続けるようにするには「setInterval」というメソッドを使います。
+  # setIntervalの書式
+  タイマーID = setInterval(処理、間隔);
