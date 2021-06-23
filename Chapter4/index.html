@@ -31,6 +31,10 @@
       return value;
     };
 
+    document,getElementById(`start_stop`).addEventListener(`click`,function() {
+
+
+
     var now = new Date(); // Dateオブジェクトのインスタンスを作る
     var seconds = now.getSeconds(); // 秒を取得する
     seconds = addZero(seconds); // addZeroファンクションを利用
@@ -43,6 +47,7 @@
     hours = addZero(hours); // addZeroファンクションを利用
 
     document.getElementById(`timer`).innerHTML = hours + `:` + minutes + `:` + seconds;
+  });
   </script>
   </body>
 </html>
