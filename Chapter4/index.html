@@ -25,6 +25,14 @@
   <script>
     var start; // 開始時間（グローバル変数）
 
+    // ゼロを追加する
+    var addZero = function(value) {
+      if (value < 10) {
+        value = `0` + value;
+      }
+      return value;
+    };
+
     document.getElementById(`start_stop`).addEventListener(`click`,function(){
       start = new Date();
 
@@ -37,8 +45,18 @@
 
       var milli = now.getTime() - start.getTime(); // 差をミリ秒で
       var seconds = Math.floor(milli / 1000); // 秒を取得
+      var minutes = Math.floor(seconds / 60); // 分を取得
+      var hours = Math.floor(minutes / 60); // 時を取得
 
-      document.getElementById(`timer`).innerHTML = seconds;
+      seconds = seconds - minutes * 60;
+      minutes = minutes - hours * 60;
+
+      // 1桁の場合は0を補完
+      hours = addZero(hours);
+      seconds = addZero(seconds);
+      minutes = addZero(minutes);
+
+      document.getElementById(`timer`).innerHTML = hours + `:` + minutes + `:` + seconds;
     }
   </script>
   </body>
