@@ -23,8 +23,10 @@
     </div>
   </div>
   <script>
+    var start; // 開始時間（グローバル変数）
+
     document.getElementById(`start_stop`).addEventListener(`click`,function(){
-      var start = new Date();
+      start = new Date();
 
       setInterval(goTimer, 10);
     });
@@ -33,7 +35,7 @@
     var goTimer = function() {
       var now = new Date();
 
-      document.getElementById(`timer`).innerHTML = now.getTime();
+      document.getElementById(`timer`).innerHTML = now.getTime() - start.getTime();
     }
   </script>
   </body>
