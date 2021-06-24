@@ -181,3 +181,6 @@ if (条件分）{
   見ている間ずっと変わり続けるようにするには「setInterval」というメソッドを使います。
   # setIntervalの書式
   タイマーID = setInterval(処理、間隔);
+
+  # floorメソッドの書式
+  整数 = Math.floor(少数)；

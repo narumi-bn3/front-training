@@ -35,7 +35,10 @@
     var goTimer = function() {
       var now = new Date();
 
-      document.getElementById(`timer`).innerHTML = now.getTime() - start.getTime();
+      var milli = now.getTime() - start.getTime(); // 差をミリ秒で
+      var seconds = Math.floor(milli / 1000); // 秒を取得
+
+      document.getElementById(`timer`).innerHTML = seconds;
     }
   </script>
   </body>
