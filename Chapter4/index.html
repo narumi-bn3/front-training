@@ -32,11 +32,26 @@
       }
       return value;
     };
-
+    
+    var timer_id;
     document.getElementById(`start_stop`).addEventListener(`click`,function(){
+      if (this.innerHTML === `START`) {
       start = new Date();
+      
+      timer_id = setInterval(goTimer, 10);
 
-      setInterval(goTimer, 10);
+      // STOPボタンにする
+      this.innerHTML = `STOP`;
+      this.classList.remove(`btn-default`);
+      this.classList.add(`btn-danger`);
+      } else {
+        clearInterval(timer_id);
+        
+        // STARTボタンにする
+        this.innerHTML = `START`;
+        this.classList.remove(`btn-danger`);
+        this.classList.add(`btn-default`);
+      }
     });
 
     // タイマーの処理

@@ -184,3 +184,21 @@ if (条件分）{
 
   # floorメソッドの書式
   整数 = Math.floor(少数)；
+
+  # STOPボタンを作成する
+  同じ操作で動作を切り替えられるボタンを「ドグルボタン」といいます。
+  # 要素にクラスを追加する書式
+  要素.classList.add(`追加するクラス名`);
+
+  # 要素からクラスを消去する書式
+  要素.classList.remove(`消去するクラス名`);
+
+  # ボタンクラスの場合
+  ```<button class="btn btn-danger">STOP</button>```
+
+  # タイマーを止めるーclearInterval
+  動き出したタイマーを止めるには「clearInterval」メソッドを使います。
+
+  # clearIntervalメソッドの書式
+  window.clearInterval(タイマーID);
+  「タイマーID」とは、「setInterval」メソッドの返り値として得ることができる情報です。
