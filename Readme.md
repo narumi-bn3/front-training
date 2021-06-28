@@ -223,3 +223,9 @@ if (条件分）{
   # 新しい要素を作るーdocument.createElementー
   「document.creatElement」は、新しく要素を作成するためのメソッドです。パラメーターに要素名を指定すると、「Element」オブジェクトが作成されます。
   これは、「document.getElementById」で要素を指定したときに生成されるオブジェクトと同じものです。そのため、「innerHTML」プロパティでコンテンツを入れるなどの操作が可能です。
+
+  # 要素を追加するーappendChildー
+  dosument.createElementメソッドで作った要素は、dosument.appendChaildメソッドで画面上の要素に追加をすることで、表示させることができます。要素は作っただけでは表示されないので、かならず追加の作業が必要です。
+
+  # appendChildメソッドの書式
+  追加する場所.appendChild(要素);
