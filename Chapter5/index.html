@@ -43,12 +43,14 @@
       var caption;
       var div;
 
+      for (var i=0; i<images.length; i++) {
+
       img = document.createElement(`img`);
-      img.setAttribute(`src`,images[0].path);
+      img.setAttribute(`src`,images[i].path);
 
       caption = document.createElement(`div`);
       caption.className = `inner`;
-      caption.innerHTML = `<p>` + images[0].caption + `<span>` + images[0].name + `</span></p>`;
+      caption.innerHTML = `<p>` + images[i].caption + `<span>` + images[i].name + `</span></p>`;
 
       div = document.createElement(`div`);
       div.className = `photo`,
@@ -56,23 +58,7 @@
       div.appendChild(caption);
 
       document.getElementById(`img_unit`).appendChild(div);
-
-      // 2件目
-      img = document.createElement(`img`);
-      img.setAttribute(`src`,images[1].path);
-
-      caption = document.createElement(`div`);
-      caption.className = `inner`;
-      caption.innerHTML = `<p>` + images[1].caption + `<span>` + images[1].name + `</span></p>`;
-
-      div = document.createElement(`div`);
-      div.className = `photo`,
-      div.appendChild(img);
-      div.appendChild(caption);
-
-      document.getElementById(`img_unit`).appendChild(div);
-
-
+    }
       //alert(images[0].caption)
     </script>
   </body>
