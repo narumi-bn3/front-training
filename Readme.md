@@ -219,4 +219,7 @@ if (条件分）{
 
   # 配列の書式
   var 配列名 = [値1,値2,値3...];
-  
+
+  # 新しい要素を作るーdocument.createElementー
+  「document.creatElement」は、新しく要素を作成するためのメソッドです。パラメーターに要素名を指定すると、「Element」オブジェクトが作成されます。
+  これは、「document.getElementById」で要素を指定したときに生成されるオブジェクトと同じものです。そのため、「innerHTML」プロパティでコンテンツを入れるなどの操作が可能です。

@@ -17,9 +17,6 @@
 
     <div class="container">
       <div id="img_unit">
-        <div class="photo">
-          <img src="img01.jpeg">
-          <div class="inner"><p>沖縄旅行の思い出<span>okinawa</span></p></div>
         </div>
       </div>
     </div><!-- container-->
@@ -42,7 +39,15 @@
         }
       ];
 
-      alert(images[0].caption)
+      var img;
+
+      img = document.createElement(`img`);
+      img.setAttribute(`src`,images[0].path);
+
+      document.getElementById(`img_unit`).appendChild(img);
+
+
+      //alert(images[0].caption)
     </script>
   </body>
 </html>
