@@ -1,0 +1,17 @@
+[
+  {
+    "path":"img01.jpeg",
+    "name":"okinawa",
+    "caption":"沖縄旅行の思い出"
+  },
+  {
+    "path":"img02.jpeg",
+    "name":"okinawa_sea",
+    "caption":"トロピカルビーチ"
+  },
+  {
+    "path":"img03.jpeg",
+    "name":"okinawa_mamorigami",
+    "caption":"手作りシーサー"
+  }
+]
